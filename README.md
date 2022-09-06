@@ -25,10 +25,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Screenshot
-
-![](.Screenshot.png)
-
 ### Links
 
 - Solution URL: [https://github.com/Peteonthebeat/Testimonials-Grid-Section-Main]
