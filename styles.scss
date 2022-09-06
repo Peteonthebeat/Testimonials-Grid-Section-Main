@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Colors */
+$moderate-violete: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$body-background-color: #edf2f8;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Body and Stuff */
+body {
+  width: 100vw;
+  display: flex;
+  padding: 4em 1.5em;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: $body-background-color;
+  color: white;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+
+  display: grid;
+  .card {
+    margin: 0 0 1.5em 0;
+    border-radius: 0.5em;
+    .card-content {
+      margin: 2em;
+      h3 {
+        font-weight: 700;
+        line-height: 1.3em;
+        margin: 1em 0;
+      }
+      h4 {
+        opacity: 50%;
+      }
+
+      p {
+        font-weight: 500;
+        line-height: 1.2em;
+        opacity: 70%;
+      }
+    }
+    .photo {
+      height: 2.5em;
+      border-radius: 5em;
+      border: 1.5px solid white;
+
+      margin: 0 1.5em 0 0;
+    }
+    .name-and-verified {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      span {
+        font-weight: 700;
+      }
+      h4 {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/* Individual Styling of the Cards */
+
+.daniel {
+  position: relative;
+  background-color: $moderate-violete;
+  .quotation {
+    position: absolute;
+
+    top: -0.5px;
+    right: 20px;
+  }
+  h3 {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.jonathan {
+  background-color: $very-dark-grayish-blue;
+}
+
+.jeanette {
+  background-color: $white;
+  color: $very-dark-blackish-blue;
+  box-shadow: rgb(17 12 46 / 15%) 20px 19px 100px 0px;
+}
+
+.patrick {
+  background-color: $very-dark-blackish-blue;
+}
+
+.kira {
+  background-color: $white;
+  color: $very-dark-blackish-blue;
+  box-shadow: rgb(17 12 46 / 15%) 20px 19px 100px 0px;
+}
+
+/* Media and Breakpoints */
+@media (min-width: 1312px) {
+  body {
+    height: 100vh;
+    padding: 8em;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 2em;
+    .card {
+      margin: 0;
+    }
+    .daniel {
+      grid-area: 1 / 1 / 3 / 3;
+    }
+    .jonathan {
+      grid-area: 1 / 3 / 3 / 4;
+    }
+    .jeanette {
+      grid-area: 3 / 1 / 5 / 2;
+    }
+    .patrick {
+      grid-area: 3 / 2 / 5 / 4;
+    }
+    .kira {
+      grid-area: 1 / 4 / 5 / 5;
+    }
+  }
+}
