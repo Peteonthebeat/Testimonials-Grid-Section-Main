@@ -1,4 +1,5 @@
 # Frontend Mentor - Testimonials grid section solution
+![Screenshot](https://user-images.githubusercontent.com/99641829/188718713-610168ad-1158-4717-b8eb-ee3f85005de1.png)
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 
